@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>越韵古诗</title>
+    <meta name="description" content="嵊州市城南小学特色校本课程越韵古诗教学">
+    <meta name="keywords" content="越韵古诗教学">
+    <link rel="short icon" href="{$smarty.const.tem}img/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="{$smarty.const.tem}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{$smarty.const.tem}css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-3 hidden-xs" id="bg"></div>
+        <div class="col-md-8 col-sm-9 col-xs-12  col">
+          <header id="header">
+            <div class="row mar">
+              <div class="col-md-6 col-sm-6 col-xs-8">
+                <h4>嵊州市城南小学特色校本课程</h4>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-4">
+                <img src="{$smarty.const.tem}img/img4.jpg" class="img-responsive pull-right" alt="精灵图片">
+              </div>
+            </div>
+          </header>
+          <div class="title">
+            越韵古诗
+          </div>
+          <nav>
+            <ul class="nav nav-pills">
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">一年级</a>
+                <ul class="dropdown-menu">
+                    {foreach $oneDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[0]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">二年级</a>
+                <ul class="dropdown-menu">
+                {foreach $twoDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[1]}&name={$vo}">{$vo}</a></li>
+				{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colortf" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">三年级</a>
+                <ul class="dropdown-menu">
+                   {foreach $threeDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[2]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colortf" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">四年级</a>
+                <ul class="dropdown-menu">
+                   {foreach $fourDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[3]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colorfs" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">五年级</a>
+                <ul class="dropdown-menu">
+                   {foreach $fiveDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[4]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colorfs" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">六年级</a>
+                <ul class="dropdown-menu">
+                   {foreach $sixDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[5]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">课外（低）</a>
+                <ul class="dropdown-menu">
+                   {foreach $lowDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[6]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colortf" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">课外（中）</a>
+                <ul class="dropdown-menu">
+                   {foreach $midDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[7]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle button colorfs" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">课外（高）</a>
+                <ul class="dropdown-menu">
+                   {foreach $senDir as $vo}
+					<li><a href="poem.php?action=index&file={$G[8]}&name={$vo}">{$vo}</a></li>
+					{/foreach}
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{$smarty.const.tem}js/jquery-3.0.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{$smarty.const.tem}js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        // alert($(window).height());
+        $("#bg").height($(window).height()); 　//浏览器时下窗口可视区域高度 
+        $(window).resize(function() {
+          $("#bg").height($(window).height());
+        });
+      });
+    </script>
+  </body>
+</html>

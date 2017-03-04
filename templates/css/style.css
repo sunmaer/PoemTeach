@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors sunmaer (you@example.org)
+ * @date    2016-08-09 16:05:07
+ * @version $Id$
+ */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    color: #333;
+}
+/*<------------------------------首页样式---------------------------------->*/
+#bg {
+	background-image: url(http://img18.poco.cn/mypoco/myphoto/20160906/21/18346930020160906213635029.png?398x720_130);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#header {
+	/*height: 20%;*/
+}
+#header h4 {
+	line-height: 40px;
+}
+#header img {
+	margin: 20px 0 20px 0;
+	max-width: 90%;
+}
+.col {
+	padding: 0;
+}
+.mar {
+	margin: 0;
+}
+.title {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-family: STLiti,"华文隶书";
+	font-size: 40px;
+	color: #fff;
+	background-color: rgb(174,93,52);
+}
+nav {
+	margin: 60px 0 0 0;
+	padding-left: calc((100% - 130px*2 - 21px)/2 + 5px);
+	padding-right: calc((100% - 130px*2 - 21px)/2 - 5px);
+}
+.nav-pills > li {
+	margin-bottom: 20px;
+}
+.nav-pills > li > a {
+	border-radius: 10px;
+}
+.nav-pills > li + li {
+	margin-left: 0;
+}
+/*.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	border: 2px solid rgb(150,150,150);
+	color: rgb(255,102,153);
+	background-color: rgb(187,224,227);
+}*/
+.dropdown-menu,.dropdown-menu a {
+	background-color: rgb(243,249,250);
+}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus {
+	background-color: rgb(187,224,227);
+}
+.button{
+	width: 130px;
+	margin-right: 10px;
+	border: 2px solid rgb(150,150,150);
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(255,102,153);
+	background-color: rgb(187,224,227);
+}
+.colortf {
+	color: rgb(255,0,0);
+}
+.colorfs {
+	color: rgb(192,0,0);
+}
+
+
+/*<------------------------------视频、图文界面样式---------------------------------->*/
+.pad {
+	padding: 0 10px;
+}
+#v-header {
+	position: relative;
+	height: 60px;
+}
+#v-header h2 {
+	line-height: 60px;
+	font-family: STHupo,"华文琥珀";
+	font-size: 25px;
+	text-align: center;
+	color: red;
+}
+#v-header h2 span.blue {
+	color: rgb(0,176,240);
+}
+#v-header img {
+	width: 150px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+section {
+	position: relative;
+}
+.wrapper {
+    display: none;
+	margin: 0 auto;
+	padding: 20px;
+	width: 100%;
+	border: 3px solid rgb(137,164,167);
+	border-radius: 40px;
+	background-color: rgb(187,224,227);
+}
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+	border: 3px solid rgb(137,164,167);
+	background-color: rgb(187,224,227);
+}
+.btngroup {
+	width: 100%;
+	padding: 40px 0 20px;
+	text-align: center;
+	background-image: url(../img/img2.png);
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
+}
+.btngroup .btn {
+	margin-top: 10px;
+	font-family: STLiti,"华文隶书";
+	font-size: 18px;
+	color: rgb(192,0,0);
+	border-radius: 8px;
+	border: 2px solid rgb(213,232,234);
+	border-top: none;
+	background-color: rgb(195,218,221);
+    outline: none;
+}
+.btngroup .btn:hover {
+	color: #fff;
+    outline: none;
+}
+.wrapper img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	border-radius: 5px;
+	/*height: 300px;*/
+}
+.demo-gallery {
+    margin-bottom: 30px;
+}
+/*<----------------------------------php中生成的p标签样式--------------------------------->*/
+.wkjx,.sxqp,.bzyy,.fcyy,.gsnb,.czyt,.txc,.yjsp,.cylj,.gspt,.xxxc {
+    display: none;
+}
+
+
+
+/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    #header img {
+    	margin: 20px 0 20px 0;
+    	max-width: 50%;
+    }
+    #header h4 {
+    	line-height: 80px;
+    }
+    .title {
+    	height: 70px;
+    	line-height: 70px;
+    	font-size: 50px;
+    }
+    nav {
+    	padding-left: calc((100% - 158px*3 - 31px)/2 + 5px);
+    	padding-right: calc((100% - 158px*3 - 31px)/2 - 5px);
+    }
+    .button{
+    	width: 158px;
+    }
+    .pad {
+    	padding: 0 20px;
+    }
+    #v-header {
+    	height: 150px;
+    }
+    #v-header h2 {
+    	text-align: left;
+    	line-height: 150px;
+    	font-size: 32px;
+    }
+    #v-header img {
+    	width: 130px;
+    	top: 0px;
+    	right: 10px;
+    }
+    .wrapper {
+    	padding: 50px;
+    	width: 100%;
+    	border-radius: 40px;    
+    }
+    .btngroup .btn {
+		margin-top: 20px;
+ 	}
+    .wrap {
+    	margin-bottom: 40px;
+    	width: 100%;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+    #header img {
+    	margin: 20px 0 20px 0;
+    	max-width: 40%;
+    }
+    .title {
+    	height: 80px;
+    	line-height: 80px;
+    	font-size: 60px;
+    }
+    .pad {
+    	padding: 0 50px;
+    }
+    #v-header {
+    	height: 100px;
+    }
+    #v-header h2 {
+    	line-height: 100px;
+    	font-size: 32px;
+    }
+    #v-header img {
+    	width: 150px;
+    	top: 10px;
+    	right: 10px;
+    }
+    .wrapper {
+    	padding: 30px 20px;
+    	width: 60%;
+    	border-radius: 40px;    
+    }
+    .wrap {
+    	margin-bottom: 0px;
+    	width: 60%;
+    }
+    .wrapper img {
+    	max-width: 65%;
+    	border-radius: 5px;
+    	/*height: 300px;*/
+    }
+    .btngroup .btn {
+		margin-top: 10px;
+ 	}
+    
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+    
+}
